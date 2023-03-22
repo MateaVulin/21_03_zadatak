@@ -10,6 +10,7 @@ const Users = () => {
     <>
       {users.length && (
         <div>
+          <nav className="navbar"></nav>
           <h2>{users[0].name}</h2>
           <h3>{users[0].address.city}</h3>
         </div>
