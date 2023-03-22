@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 const Users = () => {
-  const [users, setUsers] = useState([0]);
+  const [users, setUsers] = useState([]);
   useEffect(() => {
     fetch("https://jsonplaceholder.typicode.com/users")
       .then((res) => res.json())

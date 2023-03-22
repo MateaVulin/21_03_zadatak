@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import "./App.css";
 import Users from "./components/Users/Users";
 import Photos from "./components/Photos/Photos";
@@ -13,8 +13,8 @@ function App() {
       <button onClick={() => setPage("albums")}>Albums</button>
 
       {page === "users" && <Users />}
-      <Photos />
-      <Albums />
+      {page === "photos" && <Photos />}
+      {page === "albums" && <Albums />}
     </>
   );
 }
